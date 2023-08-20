@@ -14,7 +14,6 @@
   padding: 7px;
   &:hover {
     background-color: #2196f3;
-    /* border: 1px solid #2196f3; */
     color: #fff;
     cursor: pointer;
   }
