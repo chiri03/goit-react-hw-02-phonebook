@@ -66,7 +66,7 @@ export class ContactForm  extends Component {
             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
             onChange={this.handleChange}
                       required
-                      style={{height: '20px', marginLeft: '11px'}}
+                      style={{height: '20px', marginLeft: '10px'}}
 
           />
         </div>
