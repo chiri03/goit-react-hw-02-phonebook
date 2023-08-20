@@ -1,3 +1,4 @@
+import './ContactsList.css'
 export const SingleContact = ({ id, name, number, onRemove }) => { 
     return (
         <div className="ContactsLi">
