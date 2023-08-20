@@ -11,7 +11,7 @@ const INITIAL_STATE = {
 export class ContactForm  extends Component {
   state = INITIAL_STATE
 
-  handleChange = (evt) => {
+    handleChange = (evt) => {
       const { name, value } = evt.target;
       this.setState({ [name]: value })
   };
@@ -38,14 +38,13 @@ export class ContactForm  extends Component {
   reset = () => this.setState(INITIAL_STATE);
 
   render() {
-    const { name, number } = this.state;
+      const { name, number } = this.state;
   return (
     <>
-      <form className="Form" onSubmit={this.handleSubmitForm} key={this.id}>
+      <form className="Form" onSubmit={this.handleSubmitForm} key={nanoid()}>
         <div className="AddContactLabel">
           Name
-          <input div className="AddContac
-          tInput"
+          <input className="AddContactInput"
             name="name"
             type="text"
             value={name}
