@@ -11,7 +11,7 @@ const INITIAL_STATE = {
 export class ContactForm  extends Component {
   state = INITIAL_STATE
 
-    handleChange = (evt) => {
+  handleChange = (evt) => {
       const { name, value } = evt.target;
       this.setState({ [name]: value })
   };
@@ -38,10 +38,10 @@ export class ContactForm  extends Component {
   reset = () => this.setState(INITIAL_STATE);
 
   render() {
-      const { name, number } = this.state;
+    const { name, number } = this.state;
   return (
     <>
-      <form className="Form" onSubmit={this.handleSubmitForm} key={nanoid()}>
+      <form className="Form" onSubmit={this.handleSubmitForm} key={this.id}>
         <div className="AddContactLabel">
           Name
           <input className="AddContactInput"
@@ -51,7 +51,8 @@ export class ContactForm  extends Component {
             onChange={this.handleChange}
             pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
             title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-            required
+                      required
+                      style={{height: '20px', marginLeft: '10px'}}
           />
         </div>
         <div className="AddContactLabel">
@@ -64,8 +65,9 @@ export class ContactForm  extends Component {
             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
             onChange={this.handleChange}
                       required
-                      style={{height:'20px'}}
-         />
+                      style={{height: '20px', marginLeft: '10px'}}
+
+          />
         </div>
         <button className="AddContactButton" type="submit">Add contact</button>
       </form>
