@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import React, { Component } from "react"; // Import React
+import React, { Component } from "react"; 
 import "./ContactForm.css";
 
 const INITIAL_STATE = {
@@ -39,9 +39,9 @@ export class ContactForm extends Component {
   render() {
     const { name, number } = this.state;
     return (
-      <form className="Form" onSubmit={this.handleSubmitForm}>
-        {/* Remove the unnecessary key attribute */}
-        <div className="AddContactLabel">
+      <form className="form" onSubmit={this.handleSubmitForm}>
+   
+        <div className="add-contact-label">
           Name
           <input
             name="name"
@@ -54,7 +54,7 @@ export class ContactForm extends Component {
             style={{ height: "20px", marginLeft: "10px" }}
           />
         </div>
-        <div className="AddContactLabel">
+        <div className="add-contact-label">
           Number
           <input
             name="number"
@@ -67,7 +67,7 @@ export class ContactForm extends Component {
             style={{ height: "20px", marginLeft: "10px" }}
           />
         </div>
-        <button className="AddContactButton" type="submit">
+        <button className="add-contact-button" type="submit">
           Add contact
         </button>
       </form>

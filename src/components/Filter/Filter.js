@@ -9,7 +9,7 @@ export const Filter = ({ filter, onChange }) => {
                 type="text"
                 name="filter"
                 value={filter}
-                onChange={(event) => onChange(event.target.value)} // Use 'event' instead of 'target'
+                onChange={(event) => onChange(event.target.value)} 
                 style={{ marginLeft: "200px", height: "20px" }}
             />
         </>

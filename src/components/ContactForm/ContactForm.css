@@ -1,12 +1,12 @@
-.Form {  
-    padding: 20px;
+.form {
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  gap: 10px;}
+  align-items: flex-start;
+  gap: 10px;
+}
 
-
-.AddContactButton{
+.add-contact-button {
   margin-left: 220px;
   border: 1px solid;
   background-color: transparent;
@@ -18,14 +18,13 @@
     cursor: pointer;
   }
 }
-  
 
-.AddContactLabel  {
+.add-contact-label {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  text-align: right;
-  width: 400px;
+  justify-content: flex-start; 
+  text-align: left;
+  width: 100%; 
   line-height: 26px;
   margin-bottom: 10px;
   gap: 10px;
