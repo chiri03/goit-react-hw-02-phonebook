@@ -11,13 +11,14 @@
   background-color: transparent;
   border-radius: 4px;
   padding: 7px 12px; 
-  &:hover {
-    background-color: #1777c5;
-    border: 1px solid #1777c5;
+  &:hover{
+     background-color: #2196f3;
+    border: 1px solid #2196f3;
     color: #fff;
     cursor: pointer;
   }
 }
+
 
 .contacts-li {
   display: flex;
@@ -27,4 +28,5 @@
   width: 100%; 
   line-height: 26px;
   margin-bottom: 10px;
+  gap:10px;
 }
