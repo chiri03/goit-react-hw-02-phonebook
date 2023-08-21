@@ -4,7 +4,7 @@ export const SingleContact = ({ id, name, number, onRemove }) => {
     return (
         <div className="contacts-li">
             - {name}: {number}
-            <button className="contacts-buttontton" onClick={() => onRemove(id)}>Remove</button>
+            <button className="contacts-button" onClick={() => onRemove(id)}>Remove</button>
         </div>
     );
 };
